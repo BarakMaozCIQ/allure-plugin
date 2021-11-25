@@ -40,10 +40,7 @@ public class BuildSummary {
         return getStatistic("unknown");
     }
 
-    public Result getResult() {
-        if (getFailedCount() > 0 || getBrokenCount() > 0) {
-            return Result.UNSTABLE;
-        }
+    public Result getResult() {     
         return Result.SUCCESS;
     }
 }
